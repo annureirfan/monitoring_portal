@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="icon" href="./media/logo.png" />
+    <title>Admin</title>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading focus-in-expand" id="logo">
+          <img src="./media/logo.png" alt="" />
+        </div>
+        <div class="list-group list-group-flush">
+          <a
+            href="#"
+            class="focus-in-expand list-group-item list-group-item-action"
+            ><i class="fa fa-list-alt"></i> Dashboard</a
+          >
+
+          <a
+            href="#"
+            class="focus-in-expand list-group-item list-group-item-action"
+            ><i class="fa fa-television"></i> Overview</a
+          >
+          <a
+            href="#"
+            class="focus-in-expand list-group-item list-group-item-action"
+            ><i class="fa fa-signal"></i> Status</a
+          >
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
+          id="content-nav"
+        >
+          <button class="btn btn-outline-primary" id="menu-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">LOGOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-cog"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container scale-in-center mt-3 mb-5">
+          <!-------------------------- REGIONAL CARPARK INFO START -------------------------->
+          <h1 class="font-weight-light">Overview</h1>
+          <hr />
+          <div class="card-deck mt-4">
+            <div class="card region" id="northern">
+              <div class="card-body">
+                <h4 class="card-title">Northern</h4>
+                <p>Total parking site: <b>23</b></p>
+              </div>
+            </div>
+            <div class="card region" id="central">
+              <div class="card-body">
+                <h4 class="card-title">Central</h4>
+                <p>Total parking site: <b>37</b></p>
+              </div>
+            </div>
+            <div class="card region" id="southern">
+              <div class="card-body">
+                <h4 class="card-title">Southern</h4>
+                <p>Total parking site: <b>26</b></p>
+              </div>
+            </div>
+            <div class="card region" id="borneo">
+              <div class="card-body">
+                <h4 class="card-title">Borneo</h4>
+                <p>Total parking site: <b>16</b></p>
+              </div>
+            </div>
+          </div>
+          <!-------------------------- REGIONAL CARPARK INFO END -------------------------->
+          <div class="card mt-3">
+            <div class="font-weight-light card-header">
+              <h5 class="font-weight-light">Map</h5>
+            </div>
+            <!------------------------------ PIN START ---------------------------------------->
+            <!-- PIN 1 -->
+            <div class="card-body" id="map">
+              <div class="pin" id="pin1">
+                <a
+                  tabindex="0"
+                  role="button"
+                  data-toggle="popover"
+                  data-trigger="focus"
+                  title="Parking 1"
+                  data-content="Lorem ipsum dolor sit amet."
+                >
+                  <i class="fa fa-map-pin fa-lg"></i>
+                </a>
+              </div>
+              <!-- PIN 2 -->
+              <div class="pin" id="pin2">
+                <a
+                  tabindex="0"
+                  role="button"
+                  data-toggle="popover"
+                  data-trigger="focus"
+                  title="Parking 2"
+                  data-content="Lorem ipsum dolor sit amet."
+                >
+                  <i class="fa fa-map-pin fa-lg"></i>
+                </a>
+              </div>
+              <!-- PIN 3 -->
+              <div class="pin" id="pin3">
+                <a
+                  tabindex="0"
+                  role="button"
+                  data-toggle="popover"
+                  data-trigger="focus"
+                  title="Parking 3"
+                  data-content="Lorem ipsum dolor sit amet."
+                >
+                  <i class="fa fa-map-pin fa-lg"></i>
+                </a>
+              </div>
+              <!-- PIN 4 -->
+              <div class="pin" id="pin4">
+                <a
+                  tabindex="0"
+                  role="button"
+                  data-toggle="popover"
+                  data-trigger="focus"
+                  title="Parking 4"
+                  data-content="Lorem ipsum dolor sit amet."
+                >
+                  <i class="fa fa-map-pin fa-lg"></i>
+                </a>
+              </div>
+              <!-- PIN 5 -->
+              <div class="pin" id="pin5">
+                <a
+                  tabindex="0"
+                  role="button"
+                  data-toggle="popover"
+                  data-trigger="focus"
+                  title="Parking 5"
+                  data-content="Lorem ipsum dolor sit amet."
+                >
+                  <i class="fa fa-map-pin fa-lg"></i>
+                </a>
+              </div>
+              <!-- PIN 6 -->
+              <div class="pin" id="pin6">
+                <a
+                  tabindex="0"
+                  role="button"
+                  data-toggle="popover"
+                  data-trigger="focus"
+                  title="Parking 6"
+                  data-content="Lorem ipsum dolor sit amet."
+                >
+                  <i class="fa fa-map-pin fa-lg"></i>
+                </a>
+              </div>
+              <!-- PIN 7 -->
+              <div class="pin" id="pin7">
+                <a
+                  tabindex="0"
+                  role="button"
+                  data-toggle="popover"
+                  data-trigger="focus"
+                  title="Parking 7"
+                  data-content="Lorem ipsum dolor sit amet."
+                >
+                  <i class="fa fa-map-pin fa-lg"></i>
+                </a>
+              </div>
+              <!-- PIN 8 -->
+              <div class="pin" id="pin8">
+                <a
+                  tabindex="0"
+                  role="button"
+                  data-toggle="popover"
+                  data-trigger="focus"
+                  title="Parking 8"
+                  data-content="Lorem ipsum dolor sit amet."
+                >
+                  <i class="fa fa-map-pin fa-lg"></i>
+                </a>
+              </div>
+              <!-- PIN 9 -->
+              <div class="pin" id="pin9">
+                <a
+                  tabindex="0"
+                  role="button"
+                  data-toggle="popover"
+                  data-trigger="focus"
+                  title="Parking 9"
+                  data-content="Lorem ipsum dolor sit amet."
+                >
+                  <i class="fa fa-map-pin fa-lg"></i>
+                </a>
+              </div>
+              <!-- PIN 9 -->
+              <div class="pin" id="pin10">
+                <a
+                  tabindex="0"
+                  role="button"
+                  data-toggle="popover"
+                  data-trigger="focus"
+                  title="Parking 10"
+                  data-content="Lorem ipsum dolor sit amet."
+                >
+                  <i class="fa fa-map-pin fa-lg"></i>
+                </a>
+              </div>
+            </div>
+            <!------------------------------ PIN END ---------------------------------------->
+          </div>
+          <div class="card mt-3">
+            <!-- <div class="font-weight-light card-header">
+              <h5 class="font-weight-light">Car Park List</h5>
+            </div> -->
+            <div class="card-body">
+              <table class="table table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Parking No.</th>
+                    <th>Location</th>
+                    <th>Status Code</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Wisma Chase Perdana</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>MBJB</td>
+                    <td>406</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>MBJB</td>
+                    <td>406</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>MBJB</td>
+                    <td>406</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>MBJB</td>
+                    <td>406</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>MBJB</td>
+                    <td>406</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-------------------------------------------------------- SCRIPTS ------------------------------------------------------->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

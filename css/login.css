@@ -1,0 +1,66 @@
+/* 
+    CSS FOR LOGIN PAGE
+
+*/
+
+/***************************************************** CLASS ********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  background-image: url(../media/black-textile-952670.jpg);
+  background-size: cover;
+}
+
+.login {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px 40px 40px 40px;
+  border-radius: 10%;
+  color: rgb(167, 167, 167);
+  text-align: center;
+  -webkit-box-shadow: 0 0 9px 9px rgb(255, 255, 255, 0.5);
+  box-shadow: 0 0 9px 9px rgb(255, 255, 255, 0.5);
+}
+
+.slide-in-top {
+  -webkit-animation: slide-in-top 1s both;
+  animation: slide-in-top 1s both;
+}
+
+/******************************************************* ANIMATION KEYFRAMES ********************************************/
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

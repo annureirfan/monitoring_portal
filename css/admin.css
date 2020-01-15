@@ -1,0 +1,264 @@
+/* 
+    CSS FOR ADMIN PAGE
+
+*/
+
+/************************************************ ID *********************************************************/
+#logo {
+  text-align: center;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+  background-color: rgb(0, 107, 143);
+  box-shadow: 3px 3px 9px 0px rgba(94, 94, 94, 0.27);
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#map {
+  position: relative;
+  min-height: 470px;
+  background-image: url(../media/malaysia.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#content-nav {
+  box-shadow: 0px 2px 8px 0px rgba(94, 94, 94, 0.27);
+}
+
+#northern {
+  border-left: solid lightblue 5px;
+}
+#northern .card-title {
+  color: lightblue;
+}
+
+#central {
+  border-left: solid lightcoral 5px;
+}
+#central .card-title {
+  color: lightcoral;
+}
+#southern {
+  border-left: solid lightgreen 5px;
+}
+#southern .card-title {
+  color: lightgreen;
+}
+#borneo {
+  border-left: solid lightsalmon 5px;
+}
+#borneo .card-title {
+  color: lightsalmon;
+}
+/************************** PINS *******************************/
+#pin1 {
+  top: 250px;
+  left: 130px;
+  color: red;
+}
+
+#pin2 {
+  top: 220px;
+  left: 220px;
+  color: greenyellow;
+}
+
+#pin3 {
+  top: 270px;
+  left: 170px;
+  color: greenyellow;
+}
+
+#pin4 {
+  top: 300px;
+  left: 200px;
+  color: greenyellow;
+}
+
+#pin5 {
+  top: 320px;
+  left: 250px;
+  color: greenyellow;
+}
+
+#pin6 {
+  top: 310px;
+  left: 235px;
+  color: red;
+}
+
+#pin7 {
+  top: 245px;
+  left: 140px;
+  color: greenyellow;
+}
+
+#pin8 {
+  top: 290px;
+  left: 245px;
+  color: greenyellow;
+}
+
+#pin9 {
+  top: 327px;
+  left: 225px;
+  color: greenyellow;
+}
+
+#pin10 {
+  top: 290px;
+  left: 710px;
+  color: greenyellow;
+}
+
+/************************************************ CLASS ********************************************************/
+.focus-in-expand {
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  color: rgb(158, 158, 158);
+}
+
+.navbar-nav .nav-link {
+  letter-spacing: 1px;
+}
+
+.list-group .list-group-item {
+  background-color: rgb(0, 107, 143);
+  color: rgb(204, 204, 204);
+  border: none;
+}
+.list-group .list-group-item:hover {
+  transform: translateX(0.5rem);
+  transition: 0.4s ease-in-out;
+  color: black;
+  background-color: orange;
+  border-radius: 10px;
+  box-shadow: 3px 3px 16px 6px rgba(94, 94, 94, 0.27);
+}
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.pin {
+  position: absolute;
+  cursor: pointer;
+}
+
+.card {
+  box-shadow: 3px 3px 9px 0px rgba(94, 94, 94, 0.27);
+}
+
+.region:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+tbody {
+  display: block;
+  max-height: 10rem;
+  overflow-y: scroll;
+}
+
+thead,
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/************************************************ ANIMATION KEYFRAMES ********************************************/
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/************************************************ MEDIA QUERY *********************************************/
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
