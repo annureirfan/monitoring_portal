@@ -15,8 +15,7 @@
   -moz-transition: margin 0.25s ease-out;
   -o-transition: margin 0.25s ease-out;
   transition: margin 0.25s ease-out;
-  background-color: rgb(0, 107, 143);
-  box-shadow: 3px 3px 9px 0px rgba(94, 94, 94, 0.27);
+  background-color: rgb(219, 219, 219);
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -38,14 +37,14 @@
 
 #map {
   position: relative;
-  min-height: 470px;
+  min-height: 440px;
   background-image: url(../media/malaysia.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #content-nav {
-  box-shadow: 0px 2px 8px 0px rgba(94, 94, 94, 0.27);
+  background-color: rgb(160, 0, 0);
 }
 
 #northern {
@@ -72,6 +71,12 @@
 }
 #borneo .card-title {
   color: lightsalmon;
+}
+#eastern {
+  border-left: solid yellow 5px;
+}
+#eastern .card-title {
+  color: yellow;
 }
 /************************** PINS *******************************/
 #pin1 {
@@ -147,16 +152,14 @@
 }
 
 .list-group .list-group-item {
-  background-color: rgb(0, 107, 143);
-  color: rgb(204, 204, 204);
+  background-color: rgb(219, 219, 219);
+  color: rgb(75, 74, 74);
   border: none;
 }
 .list-group .list-group-item:hover {
-  transform: translateX(0.5rem);
-  transition: 0.4s ease-in-out;
-  color: black;
-  background-color: orange;
-  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  color: white;
+  background-color: rgb(160, 0, 0);
   box-shadow: 3px 3px 16px 6px rgba(94, 94, 94, 0.27);
 }
 
@@ -187,11 +190,37 @@ tbody {
   overflow-y: scroll;
 }
 
-thead,
+thead {
+  display: table;
+  width: 98.5%;
+  table-layout: fixed;
+}
+
 tbody tr {
   display: table;
   width: 100%;
   table-layout: fixed;
+}
+
+.list-group-item[data-toggle].collapsed:after {
+  content: "▾";
+}
+.list-group-item[data-toggle]:not(.collapsed):after {
+  content: "▴";
+}
+
+.sub {
+  background-color: rgb(189, 189, 189);
+}
+
+.sub .nav-link {
+  color: black;
+}
+
+.sub .nav-link:hover {
+  background-color: rgb(160, 0, 0);
+  color: white;
+  transition: ease 0.2s;
 }
 
 /************************************************ ANIMATION KEYFRAMES ********************************************/

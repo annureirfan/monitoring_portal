@@ -25,13 +25,13 @@
 
 .login-form {
   width: 400px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 40px 40px 40px 40px;
   border-radius: 10%;
   color: rgb(167, 167, 167);
   text-align: center;
-  -webkit-box-shadow: 0 0 9px 9px rgb(255, 255, 255, 0.5);
-  box-shadow: 0 0 9px 9px rgb(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 9px 9px rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 9px 9px rgba(255, 0, 0, 0.5);
 }
 
 .slide-in-top {

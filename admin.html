@@ -19,89 +19,142 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/admin.css" />
-    <link rel="icon" href="./media/logo.png" />
+    <link rel="icon" href="./media/icon.png" />
     <title>Admin</title>
   </head>
 
   <body>
     <div class="d-flex" id="wrapper">
-      <!-- Sidebar -->
-      <div class="border-right" id="sidebar-wrapper">
+      <!----- Sidebar ----->
+      <div id="sidebar-wrapper">
         <div class="sidebar-heading focus-in-expand" id="logo">
           <img src="./media/logo.png" alt="" />
         </div>
-        <div class="list-group list-group-flush">
-          <a
-            href="#"
-            class="focus-in-expand list-group-item list-group-item-action"
-            ><i class="fa fa-list-alt"></i> Dashboard</a
-          >
-
-          <a
-            href="#"
-            class="focus-in-expand list-group-item list-group-item-action"
-            ><i class="fa fa-television"></i> Overview</a
-          >
-          <a
-            href="#"
-            class="focus-in-expand list-group-item list-group-item-action"
-            ><i class="fa fa-signal"></i> Status</a
-          >
-        </div>
+        <ul class="list-group list-group-flush">
+          <li>
+            <a
+              class="focus-in-expand list-group-item list-group-item-action collapsed"
+              href="#submenu1"
+              data-toggle="collapse"
+              data-target="#submenu1"
+              ><i class="fa fa-list-alt"></i> Dashboard</a
+            >
+            <div class="collapse sub" id="submenu1" aria-expanded="false">
+              <ul class="list-group list-group-flush">
+                <li>
+                  <a href="#" class="nav-link"
+                    ><i class="fa fa-list-alt"></i> 1</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link"
+                    ><i class="fa fa-list-alt"></i> 2</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link"
+                    ><i class="fa fa-list-alt"></i> 3</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="focus-in-expand list-group-item list-group-item-action"
+              ><i class="fa fa-list-alt"></i> Overview</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="focus-in-expand list-group-item list-group-item-action collapsed"
+              ><i class="fa fa-list-alt"></i> Status</a
+            >
+          </li>
+        </ul>
       </div>
-      <!-- /#sidebar-wrapper -->
+      <!----- #sidebar-wrapper ----->
 
       <!-- Page Content -->
       <div id="page-content-wrapper">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
-          id="content-nav"
-        >
-          <button class="btn btn-outline-primary" id="menu-toggle">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="content-nav">
+          <button class="btn btn-secondary" id="menu-toggle" title="Menu">
             <i class="fa fa-bars"></i>
           </button>
 
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <form class="form-inline my-2 my-lg-0 mr-4">
+              <input
+                class="form-control mr-sm-2"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-secondary my-2 my-sm-0"
+                type="submit"
+                title="Search"
+              >
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">LOGOUT</a>
+              <a class="nav-link" href="#" title="Notification"
+                ><i class="fa fa-bell"></i
+              ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-cog"></i></a>
+              <a class="nav-link" href="#" title="Settings"
+                ><i class="fa fa-cog"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" title="Logout"
+                ><i class="fa fa-sign-out"></i>LOGOUT</a
+              >
             </li>
           </ul>
         </nav>
         <div class="container scale-in-center mt-3 mb-5">
           <!-------------------------- REGIONAL CARPARK INFO START -------------------------->
-          <h1 class="font-weight-light">Overview</h1>
+          <h5>Overview</h5>
           <hr />
           <div class="card-deck mt-4">
             <div class="card region" id="northern">
               <div class="card-body">
-                <h4 class="card-title">Northern</h4>
+                <h5 class="card-title">Northern</h5>
                 <p>Total parking site: <b>23</b></p>
               </div>
             </div>
             <div class="card region" id="central">
               <div class="card-body">
-                <h4 class="card-title">Central</h4>
+                <h5 class="card-title">Central</h5>
                 <p>Total parking site: <b>37</b></p>
               </div>
             </div>
             <div class="card region" id="southern">
               <div class="card-body">
-                <h4 class="card-title">Southern</h4>
+                <h5 class="card-title">Southern</h5>
                 <p>Total parking site: <b>26</b></p>
+              </div>
+            </div>
+            <div class="card region" id="eastern">
+              <div class="card-body">
+                <h5 class="card-title">Eastern</h5>
+                <p>Total parking site: <b>16</b></p>
               </div>
             </div>
             <div class="card region" id="borneo">
               <div class="card-body">
-                <h4 class="card-title">Borneo</h4>
+                <h5 class="card-title">Borneo</h5>
                 <p>Total parking site: <b>16</b></p>
               </div>
             </div>
           </div>
           <!-------------------------- REGIONAL CARPARK INFO END -------------------------->
-          <div class="card mt-3">
+          <div class="card mt-4">
             <div class="font-weight-light card-header">
               <h5 class="font-weight-light">Map</h5>
             </div>
@@ -240,12 +293,12 @@
             </div>
             <!------------------------------ PIN END ---------------------------------------->
           </div>
-          <div class="card mt-3">
-            <!-- <div class="font-weight-light card-header">
-              <h5 class="font-weight-light">Car Park List</h5>
-            </div> -->
+          <div class="card mt-4">
+            <div class="font-weight-light card-header">
+              <h5 class="font-weight-light">Car Park</h5>
+            </div>
             <div class="card-body">
-              <table class="table table-hover">
+              <table class="table">
                 <thead class="thead-light">
                   <tr>
                     <th>Parking No.</th>
