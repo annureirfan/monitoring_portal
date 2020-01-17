@@ -15,7 +15,7 @@
   -moz-transition: margin 0.25s ease-out;
   -o-transition: margin 0.25s ease-out;
   transition: margin 0.25s ease-out;
-  background-color: rgb(219, 219, 219);
+  background-color: #e8e8e8;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -44,7 +44,7 @@
 }
 
 #content-nav {
-  background-color: rgb(160, 0, 0);
+  background-color: black;
 }
 
 #northern {
@@ -152,14 +152,14 @@
 }
 
 .list-group .list-group-item {
-  background-color: rgb(219, 219, 219);
+  background-color: #e8e8e8;
   color: rgb(75, 74, 74);
   border: none;
 }
 .list-group .list-group-item:hover {
   transition: 0.2s ease-in-out;
   color: white;
-  background-color: rgb(160, 0, 0);
+  background-color: #ef3e36;
   box-shadow: 3px 3px 16px 6px rgba(94, 94, 94, 0.27);
 }
 
@@ -209,18 +209,20 @@ tbody tr {
   content: "▴";
 }
 
-.sub {
-  background-color: rgb(189, 189, 189);
-}
-
 .sub .nav-link {
-  color: black;
+  color: rgb(75, 74, 74);
 }
 
 .sub .nav-link:hover {
-  background-color: rgb(160, 0, 0);
+  background-color: #c73730;
   color: white;
   transition: ease 0.2s;
+  box-shadow: 3px 3px 16px 6px rgba(94, 94, 94, 0.27);
+}
+
+.submenu-list {
+  background-color: rgb(189, 189, 189);
+  list-style: none;
 }
 
 /************************************************ ANIMATION KEYFRAMES ********************************************/
