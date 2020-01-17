@@ -24,328 +24,333 @@
   </head>
 
   <body>
-    <div class="d-flex" id="wrapper">
-      <!----- Sidebar ----->
-      <div id="sidebar-wrapper">
-        <div class="sidebar-heading focus-in-expand" id="logo">
-          <img src="./media/logo.png" alt="" />
-        </div>
-        <ul class="list-group list-group-flush">
-          <li>
-            <a
-              class="focus-in-expand list-group-item list-group-item-action collapsed"
-              href="#submenu1"
-              data-toggle="collapse"
-              data-target="#submenu1"
-              ><i class="mr-2 fa fa-list-alt"></i> Dashboard</a
-            >
-            <div class="collapse sub" id="submenu1" aria-expanded="false">
-              <ul class="submenu-list">
-                <li>
-                  <a href="#" class="nav-link"
-                    ><i class="mr-2 fa fa-table"></i> List of Carparks</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="nav-link"
-                    ><i class="mr-2 fa fa-exclamation"></i> Error</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="nav-link"
-                    ><i class="mr-2 fa fa-list-alt"></i> 3</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="focus-in-expand list-group-item list-group-item-action"
-              ><i class="mr-2 fa fa-television"></i> Overview</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="focus-in-expand list-group-item list-group-item-action collapsed"
-              ><i class="mr-2 fa fa-signal"></i> Status</a
-            >
-          </li>
-        </ul>
-      </div>
-      <!----- #sidebar-wrapper ----->
-
-      <!-- Page Content -->
-      <div id="page-content-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-dark" id="content-nav">
-          <button class="btn btn-secondary" id="menu-toggle" title="Menu">
-            <i class="fa fa-bars"></i>
-          </button>
-
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <form class="form-inline my-2 my-lg-0 mr-4">
-              <input
-                class="form-control mr-sm-2"
-                type="text"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-secondary my-2 my-sm-0"
-                type="submit"
-                title="Search"
+    <div class="screen-message container">
+      <h1>Please open this portal with a fullscreen window.</h1>
+    </div>
+    <div class="main">
+      <div class="d-flex" id="wrapper">
+        <!----- Sidebar ----->
+        <div id="sidebar-wrapper">
+          <div
+            class="sidebar-heading focus-in-expand"
+            id="logo"
+            title="Metro Parking"
+          >
+            <img src="./media/logo.png" alt="" />
+          </div>
+          <hr />
+          <ul class="list-group list-group-flush">
+            <li>
+              <a
+                class="focus-in-expand list-group-item list-group-item-action collapsed"
+                href="#submenu1"
+                data-toggle="collapse"
+                data-target="#submenu1"
+                ><i class="mr-2 fa fa-home fa-lg"></i> Dashboard</a
               >
-                <i class="fa fa-search"></i>
-              </button>
-            </form>
-            <li class="nav-item">
-              <a class="nav-link" href="#" title="Notification"
-                ><i class="fa fa-bell"></i
-              ></a>
+              <div class="collapse sub" id="submenu1" aria-expanded="false">
+                <ul class="submenu-list">
+                  <li>
+                    <a href="#" class="nav-link">First</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Second</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Third</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" title="Settings"
-                ><i class="fa fa-cog"></i
-              ></a>
+            <li>
+              <a
+                href="#"
+                class="focus-in-expand list-group-item list-group-item-action"
+                ><i class="mr-2 fa fa-television fa-lg"></i> Overview</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html" title="Logout"
-                ><i class="fa fa-sign-out"></i>LOGOUT</a
+            <li>
+              <a
+                href="#"
+                class="focus-in-expand list-group-item list-group-item-action collapsed"
+                ><i class="mr-2 fa fa-signal fa-lg"></i> Status</a
               >
             </li>
           </ul>
-        </nav>
-        <div class="container scale-in-center mt-3 mb-5">
-          <!-------------------------- REGIONAL CARPARK INFO START -------------------------->
-          <h5>Overview</h5>
           <hr />
-          <div class="card-deck mt-4">
-            <div class="card region" id="northern">
+        </div>
+        <!----- #sidebar-wrapper ----->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <nav class="navbar navbar-expand-lg navbar-dark" id="content-nav">
+            <button class="btn btn-secondary" id="menu-toggle" title="Menu">
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <form class="form-inline my-2 my-lg-0 mr-4">
+                <input
+                  class="form-control mr-sm-2"
+                  type="text"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-primary my-2 my-sm-0"
+                  type="submit"
+                  title="Search"
+                >
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="Notification"
+                  ><i class="fa fa-bell"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="Settings"
+                  ><i class="fa fa-cog"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html" title="Logout"
+                  ><i class="fa fa-sign-out"></i>LOGOUT</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="container scale-in-center mt-3 mb-5">
+            <!-------------------------- REGIONAL CARPARK INFO START -------------------------->
+            <h5>Overview</h5>
+            <hr />
+            <div class="card-deck mt-4">
+              <div class="card region" id="northern">
+                <div class="card-body">
+                  <h5 class="card-title">Northern</h5>
+                  <p>Total parking site: <b>23</b></p>
+                </div>
+              </div>
+              <div class="card region" id="central">
+                <div class="card-body">
+                  <h5 class="card-title">Central</h5>
+                  <p>Total parking site: <b>37</b></p>
+                </div>
+              </div>
+              <div class="card region" id="southern">
+                <div class="card-body">
+                  <h5 class="card-title">Southern</h5>
+                  <p>Total parking site: <b>26</b></p>
+                </div>
+              </div>
+              <div class="card region" id="eastern">
+                <div class="card-body">
+                  <h5 class="card-title">Eastern</h5>
+                  <p>Total parking site: <b>16</b></p>
+                </div>
+              </div>
+              <div class="card region" id="borneo">
+                <div class="card-body">
+                  <h5 class="card-title">Borneo</h5>
+                  <p>Total parking site: <b>16</b></p>
+                </div>
+              </div>
+            </div>
+            <!-------------------------- REGIONAL CARPARK INFO END -------------------------->
+            <div class="card mt-4">
+              <div class="font-weight-light card-header">
+                <h5 class="font-weight-light">Map</h5>
+              </div>
+              <!------------------------------ PIN START ---------------------------------------->
+              <!-- PIN 1 -->
+              <div class="card-body" id="map">
+                <div class="pin" id="pin1">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Parking 1"
+                    data-content="Lorem ipsum dolor sit amet."
+                  >
+                    <i class="fa fa-map-pin fa-lg"></i>
+                  </a>
+                </div>
+                <!-- PIN 2 -->
+                <div class="pin" id="pin2">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Parking 2"
+                    data-content="Lorem ipsum dolor sit amet."
+                  >
+                    <i class="fa fa-map-pin fa-lg"></i>
+                  </a>
+                </div>
+                <!-- PIN 3 -->
+                <div class="pin" id="pin3">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Parking 3"
+                    data-content="Lorem ipsum dolor sit amet."
+                  >
+                    <i class="fa fa-map-pin fa-lg"></i>
+                  </a>
+                </div>
+                <!-- PIN 4 -->
+                <div class="pin" id="pin4">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Parking 4"
+                    data-content="Lorem ipsum dolor sit amet."
+                  >
+                    <i class="fa fa-map-pin fa-lg"></i>
+                  </a>
+                </div>
+                <!-- PIN 5 -->
+                <div class="pin" id="pin5">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Parking 5"
+                    data-content="Lorem ipsum dolor sit amet."
+                  >
+                    <i class="fa fa-map-pin fa-lg"></i>
+                  </a>
+                </div>
+                <!-- PIN 6 -->
+                <div class="pin" id="pin6">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Parking 6"
+                    data-content="Lorem ipsum dolor sit amet."
+                  >
+                    <i class="fa fa-map-pin fa-lg"></i>
+                  </a>
+                </div>
+                <!-- PIN 7 -->
+                <div class="pin" id="pin7">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Parking 7"
+                    data-content="Lorem ipsum dolor sit amet."
+                  >
+                    <i class="fa fa-map-pin fa-lg"></i>
+                  </a>
+                </div>
+                <!-- PIN 8 -->
+                <div class="pin" id="pin8">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Parking 8"
+                    data-content="Lorem ipsum dolor sit amet."
+                  >
+                    <i class="fa fa-map-pin fa-lg"></i>
+                  </a>
+                </div>
+                <!-- PIN 9 -->
+                <div class="pin" id="pin9">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Parking 9"
+                    data-content="Lorem ipsum dolor sit amet."
+                  >
+                    <i class="fa fa-map-pin fa-lg"></i>
+                  </a>
+                </div>
+                <!-- PIN 9 -->
+                <div class="pin" id="pin10">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    data-toggle="popover"
+                    data-trigger="focus"
+                    title="Parking 10"
+                    data-content="Lorem ipsum dolor sit amet."
+                  >
+                    <i class="fa fa-map-pin fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+              <!------------------------------ PIN END ---------------------------------------->
+            </div>
+            <div class="card mt-4">
+              <div class="font-weight-light card-header">
+                <h5 class="font-weight-light">Car Park</h5>
+              </div>
               <div class="card-body">
-                <h5 class="card-title">Northern</h5>
-                <p>Total parking site: <b>23</b></p>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Parking No.</th>
+                      <th>Location</th>
+                      <th>Status Code</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Wisma Chase Perdana</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>MBJB</td>
+                      <td>406</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>MBJB</td>
+                      <td>406</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>MBJB</td>
+                      <td>406</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>MBJB</td>
+                      <td>406</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>MBJB</td>
+                      <td>406</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </div>
-            <div class="card region" id="central">
-              <div class="card-body">
-                <h5 class="card-title">Central</h5>
-                <p>Total parking site: <b>37</b></p>
-              </div>
-            </div>
-            <div class="card region" id="southern">
-              <div class="card-body">
-                <h5 class="card-title">Southern</h5>
-                <p>Total parking site: <b>26</b></p>
-              </div>
-            </div>
-            <div class="card region" id="eastern">
-              <div class="card-body">
-                <h5 class="card-title">Eastern</h5>
-                <p>Total parking site: <b>16</b></p>
-              </div>
-            </div>
-            <div class="card region" id="borneo">
-              <div class="card-body">
-                <h5 class="card-title">Borneo</h5>
-                <p>Total parking site: <b>16</b></p>
-              </div>
-            </div>
-          </div>
-          <!-------------------------- REGIONAL CARPARK INFO END -------------------------->
-          <div class="card mt-4">
-            <div class="font-weight-light card-header">
-              <h5 class="font-weight-light">Map</h5>
-            </div>
-            <!------------------------------ PIN START ---------------------------------------->
-            <!-- PIN 1 -->
-            <div class="card-body" id="map">
-              <div class="pin" id="pin1">
-                <a
-                  tabindex="0"
-                  role="button"
-                  data-toggle="popover"
-                  data-trigger="focus"
-                  title="Parking 1"
-                  data-content="Lorem ipsum dolor sit amet."
-                >
-                  <i class="fa fa-map-pin fa-lg"></i>
-                </a>
-              </div>
-              <!-- PIN 2 -->
-              <div class="pin" id="pin2">
-                <a
-                  tabindex="0"
-                  role="button"
-                  data-toggle="popover"
-                  data-trigger="focus"
-                  title="Parking 2"
-                  data-content="Lorem ipsum dolor sit amet."
-                >
-                  <i class="fa fa-map-pin fa-lg"></i>
-                </a>
-              </div>
-              <!-- PIN 3 -->
-              <div class="pin" id="pin3">
-                <a
-                  tabindex="0"
-                  role="button"
-                  data-toggle="popover"
-                  data-trigger="focus"
-                  title="Parking 3"
-                  data-content="Lorem ipsum dolor sit amet."
-                >
-                  <i class="fa fa-map-pin fa-lg"></i>
-                </a>
-              </div>
-              <!-- PIN 4 -->
-              <div class="pin" id="pin4">
-                <a
-                  tabindex="0"
-                  role="button"
-                  data-toggle="popover"
-                  data-trigger="focus"
-                  title="Parking 4"
-                  data-content="Lorem ipsum dolor sit amet."
-                >
-                  <i class="fa fa-map-pin fa-lg"></i>
-                </a>
-              </div>
-              <!-- PIN 5 -->
-              <div class="pin" id="pin5">
-                <a
-                  tabindex="0"
-                  role="button"
-                  data-toggle="popover"
-                  data-trigger="focus"
-                  title="Parking 5"
-                  data-content="Lorem ipsum dolor sit amet."
-                >
-                  <i class="fa fa-map-pin fa-lg"></i>
-                </a>
-              </div>
-              <!-- PIN 6 -->
-              <div class="pin" id="pin6">
-                <a
-                  tabindex="0"
-                  role="button"
-                  data-toggle="popover"
-                  data-trigger="focus"
-                  title="Parking 6"
-                  data-content="Lorem ipsum dolor sit amet."
-                >
-                  <i class="fa fa-map-pin fa-lg"></i>
-                </a>
-              </div>
-              <!-- PIN 7 -->
-              <div class="pin" id="pin7">
-                <a
-                  tabindex="0"
-                  role="button"
-                  data-toggle="popover"
-                  data-trigger="focus"
-                  title="Parking 7"
-                  data-content="Lorem ipsum dolor sit amet."
-                >
-                  <i class="fa fa-map-pin fa-lg"></i>
-                </a>
-              </div>
-              <!-- PIN 8 -->
-              <div class="pin" id="pin8">
-                <a
-                  tabindex="0"
-                  role="button"
-                  data-toggle="popover"
-                  data-trigger="focus"
-                  title="Parking 8"
-                  data-content="Lorem ipsum dolor sit amet."
-                >
-                  <i class="fa fa-map-pin fa-lg"></i>
-                </a>
-              </div>
-              <!-- PIN 9 -->
-              <div class="pin" id="pin9">
-                <a
-                  tabindex="0"
-                  role="button"
-                  data-toggle="popover"
-                  data-trigger="focus"
-                  title="Parking 9"
-                  data-content="Lorem ipsum dolor sit amet."
-                >
-                  <i class="fa fa-map-pin fa-lg"></i>
-                </a>
-              </div>
-              <!-- PIN 9 -->
-              <div class="pin" id="pin10">
-                <a
-                  tabindex="0"
-                  role="button"
-                  data-toggle="popover"
-                  data-trigger="focus"
-                  title="Parking 10"
-                  data-content="Lorem ipsum dolor sit amet."
-                >
-                  <i class="fa fa-map-pin fa-lg"></i>
-                </a>
-              </div>
-            </div>
-            <!------------------------------ PIN END ---------------------------------------->
-          </div>
-          <div class="card mt-4">
-            <div class="font-weight-light card-header">
-              <h5 class="font-weight-light">Car Park</h5>
-            </div>
-            <div class="card-body">
-              <table class="table">
-                <thead class="thead-light">
-                  <tr>
-                    <th>Parking No.</th>
-                    <th>Location</th>
-                    <th>Status Code</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Wisma Chase Perdana</td>
-                    <td>400</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>MBJB</td>
-                    <td>406</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>MBJB</td>
-                    <td>406</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>MBJB</td>
-                    <td>406</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>MBJB</td>
-                    <td>406</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>MBJB</td>
-                    <td>406</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
+        <!-- /#page-content-wrapper -->
       </div>
-      <!-- /#page-content-wrapper -->
+      <!-- /#wrapper -->
     </div>
-    <!-- /#wrapper -->
     <!-------------------------------------------------------- SCRIPTS ------------------------------------------------------->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

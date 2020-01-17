@@ -78,6 +78,7 @@
 #eastern .card-title {
   color: yellow;
 }
+
 /************************** PINS *******************************/
 #pin1 {
   top: 250px;
@@ -178,9 +179,15 @@
   box-shadow: 3px 3px 9px 0px rgba(94, 94, 94, 0.27);
 }
 
+.region {
+  transition: 0.2s ease;
+  box-shadow: none;
+}
+
 .region:hover {
-  transform: scale(1.05);
-  transition: 0.4s ease;
+  translate: 5px -5px;
+  box-shadow: -5px 5px 0px 0px #afafaf;
+  transition: 0.2s ease;
   cursor: pointer;
 }
 
@@ -203,10 +210,14 @@ tbody tr {
 }
 
 .list-group-item[data-toggle].collapsed:after {
-  content: "▾";
+  font-family: FontAwesome;
+  float: right;
+  content: "\f078";
 }
 .list-group-item[data-toggle]:not(.collapsed):after {
-  content: "▴";
+  font-family: FontAwesome;
+  float: right;
+  content: "\f077";
 }
 
 .sub .nav-link {
@@ -214,14 +225,11 @@ tbody tr {
 }
 
 .sub .nav-link:hover {
-  background-color: #c73730;
-  color: white;
-  transition: ease 0.2s;
-  box-shadow: 3px 3px 16px 6px rgba(94, 94, 94, 0.27);
+  border-left: red solid 7px;
+  transition: all ease 0.15s;
 }
 
 .submenu-list {
-  background-color: rgb(189, 189, 189);
   list-style: none;
 }
 
@@ -291,5 +299,25 @@ tbody tr {
 
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
+  }
+}
+
+.screen-message {
+  display: none;
+}
+
+.main {
+  display: block;
+}
+@media (max-width: 1140px) {
+  .main {
+    display: none;
+  }
+  .screen-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
   }
 }
