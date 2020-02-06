@@ -38,7 +38,7 @@ am4core.ready(function() {
       title: "Kuala Lumpur",
       latitude: 3.139,
       longitude: 101.6869,
-      url: "wow"
+      url: "index.html"
     },
     {
       title: "Ipoh",

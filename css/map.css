@@ -1,8 +1,17 @@
+/* 
+    CSS FOR MAP
+
+*/
+
+/************************************************ ID *********************************************************/
+
 #chartdiv {
   width: 100%;
-  height: 55vh;
+  height: 100%;
   overflow: hidden;
 }
+
+/************************************************ CLASS ********************************************************/
 
 .map-marker {
   /* adjusting for the marker dimensions
@@ -11,9 +20,11 @@
   margin-top: -8px;
   box-sizing: border-box;
 }
+
 .map-marker.map-clickable {
   cursor: pointer;
 }
+
 .pulse {
   width: 10px;
   height: 10px;
@@ -26,6 +37,7 @@
   position: absolute;
   box-sizing: border-box;
 }
+
 .map-marker .dot {
   border: 10px solid #fff601;
   background: transparent;
@@ -34,9 +46,9 @@
   border-radius: 60px;
   height: 50px;
   width: 50px;
-  -webkit-animation: pulse 3s ease-out;
-  -moz-animation: pulse 3s ease-out;
-  animation: pulse 3s ease-out;
+  -webkit-animation: pulse 2s ease-out;
+  -moz-animation: pulse 2s ease-out;
+  animation: pulse 2s ease-out;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -47,6 +59,9 @@
   opacity: 0;
   box-sizing: border-box;
 }
+
+/************************************************ ANIMATION KEYFRAMES ********************************************/
+
 @-moz-keyframes pulse {
   0% {
     -moz-transform: scale(0);
